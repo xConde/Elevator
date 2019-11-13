@@ -1,8 +1,16 @@
 package command;
 
+/**
+ * Floor abstract class. 
+ *
+ */
 public abstract class Floor {
 	Mediator mediator;
 	
+	/**
+	 * Floor constructor
+	 * @param mediator
+	 */
 	Floor(Mediator mediator) {
 		this.mediator = mediator;		
 	}
@@ -12,6 +20,4 @@ public abstract class Floor {
 	abstract Floor button3();
 	
 	abstract Floor getState();
-	abstract void moveFloor();
-	
 }

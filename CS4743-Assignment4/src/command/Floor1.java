@@ -1,7 +1,15 @@
 package command;
 
+/**
+ * Floor1 class. Extends the abstract Floor class. Overrides buttons for this floor and overrides the state as elevator arriving at floor 1.
+ *
+ */
 public class Floor1 extends Floor {
 
+	/**
+	 * Floor1 constructor
+	 * @param mediator
+	 */
 	Floor1(Mediator mediator) {
 		super(mediator);
 	}
@@ -15,9 +23,9 @@ public class Floor1 extends Floor {
 	@Override
 	Floor button3() { return mediator.moveUp(3).getState(); }
 	
-	@Override
-	public void moveFloor() {}
-	
+	/**
+	 * getState. Retrieves current state pertaining to Floor1. 
+	 */
 	@Override
 	public Floor getState() {
 		System.out.println("*ding* The elevator arrives at Floor 1");
